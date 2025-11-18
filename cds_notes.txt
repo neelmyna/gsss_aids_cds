@@ -128,5 +128,112 @@ Janvi		1
 UshaRahsmi	1
 
 
+int num;  // %ld   %d
+long int num;
+signed long int num;
+signed int num;
+long num; // Error
+
+long long int num; // 8 bytes   %lld
+short int num; // 2 bytes   %d
+
+DS
+What is DS
+Need and Birth of an Array
+Abstraction (ease of use)
+
+POINTER ARITHMETIC:
+An arithmetic which involves an address
+Address + number = Address
+Address - number = Address
+address - address = number
+
+In a 1D Array, assume its name is arr
+arr is address of 1st element
+
+    //for (int i = 0; i < 10; i++)
+    //for (int i = 0; i < n; i++)
+    malloc(60) // always allocates 60 bytes
+    ptr = malloc(sizeof(float) * size)
+    void* malloc(size_t)
+
+1. Find smallest anmd biggest elements of an Dy Array.
+2. Swap consecutive elements of an Array
+3. Remove duplicate elements of an array and store the remaining elements consecutively
+4. In an Array of size N, partition the array in ratio X:Y such that elements in X[] are all greater than the P elements and all the elements in the Y[] are smaller than all the P elements. Print how many such P elements are there in the array.
+---------------------------------------------
+Pragna
+char c1, c2, c3... c6;
+Pass Pragna to a function as 6 Args.
+Pragna is one data or 6 data?
+1ts one data.
+
+Its better to store one data in one var.
+Thus we must excapsulate all characters of Pragna and store the 6 characters in a char array.
+
+To know the end of the string we store the '\0' character.
+Thus a string is a group characters which is one data.
+
+char s1[10] = "gsss"; // 10 bytes
+char s2[] = {'g', 's', 's', 's'}; // 4 bytes
+char s3[] = "gsss"; // 5 bytes
+
+char *p = s3;
+p = s2; // pointer is not constant
+p[0] = 'G'; // string is not constant
+//*(p+0) = *p
+
+const char *p1 = s3;
+p1 = s2; // Error  Pointer is constant
+p1[0] = 'G'; // Fine Bcoz string is not constant
 
 
+char const* p2 = s3; //&s3[0]
+p2 = s2; // Fine. Pointer is not constant
+p2[0] = 'Y'; // Error. string is constant 
+
+
+const char const *p3 = s3;
+p3 = s2; // Error. Poiner is constant
+p3[1] = 'X'; // Error. String is also constant
+
+STRING HANDLING FUNCTIONS:
+functions from the library string.h
+
+strlen()
+
+int i = 0;
+for(; p[i] != '\0'; i++);
+return i;
+
+int strlen(char const*);
+
+strcpy(D, S);
+çhar* strcpy(char*, char const*);
+strcmp(char const*, char const*);
+
+strcat()
+char* strrev(char*)
+
+strrev() need the help of strlen()
+
+strrev.h
+strrev.c
+strlen.h
+strlen.c
+
+str_demo.c  [ main() ]
+
+---------------------------------------------
+GOOD CODING PRACTICES:
+1. Use indentation of 4 spaces.
+2. Use space before and after every binary operators (except . -> )
+3. Initialize all variables
+4. A line break in between definitions of 2 functions.
+5. While comparing a variable value with a literal (const value), place the literal on RHS.
+    if(5 == num) Wrost
+    if(num == 5) Better
+6. 
+
+AIDS Test1
+https://forms.gle/JzCug3ETVDCeSutn6
