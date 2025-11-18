@@ -1,0 +1,132 @@
+Create Github Account using permanent email and phone number
+
+Create New Repo
+Click on + (top right) in logged in page
+Click New Repository (Drop down list)
+Name of Repo: mtd_cds
+Keep the Repo public
+Select the check box add readme file
+Click the green button create repo
+
+https://github.com/neelmyna/gsss_aids_cds
+
+Configuration:
+
+git config --global user.name "neelmyna"
+git config --global user.email "MY_EMAIL"
+Credential Manager (Windows)
+
+Create Personal Access Token (PAT)
+Click on top right profile icon
+Click Settings (Down in the list)
+Next page, scroll down and click developer settings
+Nex page, on top left, Click tokens classic
+Next page, Click generate new token, select classic
+Expiration: Select No Expiry
+Note: for all my learning during my engg
+Scope: Select the very 1st checkbox Repo
+Scroll down and Click generate new token (green button)
+PAT is created and Copy button (Copy it)
+Mail the PAT to yourself (mail subject git_pat)
+
+SRP
+
+float num = 4.75;
+
+
+gcc steps:
+1. pre processing (includes/opens/loads the mentioned files)
+2. Compilation
+	1. Syntax checking
+	2. Translation (HR code to MR code)
+	3. Interpretation (O/P is object code)
+3. Linking (O/P: executable file)
+
+gcc Options:
+-E  To stop after pre-processing
+O/P: User defined code + Library code
+-c  To stop after compilation (object code is generated)
+-o  To specify the target
+gcc p1.c 
+gcc p1.c -o p1 (This is to specify the target file)
+gcc p1.c -S p1.s
+gcc -lm p1.c (The math libraries are loaded and linked properly)
+
+Cohesion
+SRP (high cohesion)
+Type casting (conversion of a value of a specific DT into another type)
+Down cast
+Up cast
+Implicit up cast/down cast
+Explicit cast
+
+int main()
+{
+    float num = 17 / 3;
+    printf("Num = %d \n", num); // 5
+    printf("Num = %f \n", num); // 5.66666
+}
+--------------------
+&	Long logical operator (When operands are boolean)
+&	Bitwise  operator	(When operands are numbers)
+&	Unary address of operator (when operand is a variable)
+
+C1 && C2 // short cut and
+-----------------------------
+Unary & "Address of" Operator
+It can be applied only to a variable (including a pointer, because a pointer is a variable).
+When we apply & to a variable, we get its address.
+
+Unary * "Dereferencing" or "Value at" operator
+It can be applied only to an address (including a pointer, because a pointer holds an address).
+When we apply * to a variable, we get the value present in its address.
+
+*num
+value at(5.5)
+
+*(&num)
+= value at [ address of (num)]
+= v at[1351]
+= 5.5
+= num
+
+Address of operator
+Value at operator
+Pointer variable
+Data type of an address
+
+Day2:
+Number is not an address
+Address is not a number
+AAdress (pointer) arithmetic
+Types of Pointers
+Pointer to a pointer
+
+What is a DS
+Array as a DS
+Implentation of Array
+Function call stack (how functions work implecitly)
+Recursion and REcursive functions, base condition and problems
+String
+String handling functions
+Dymanic Array (maaloc and free functions)
+Structures
+	what is strcuture
+	data encapsulation
+	strcuture definition
+	padding
+	pointer to a strcuture
+	strcuture within a strcuture
+	self referential strcuture
+
+
+Arpita		3
+Shobitha	2
+Jaylakshmi	4
+Prathiba	1
+Janvi		1
+UshaRahsmi	1
+
+
+
+
